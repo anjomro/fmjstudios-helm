@@ -75,7 +75,7 @@ data:
   {{- end }}
   {{- if has $issuer $issuerList }}
   {{- if $v.issuer }}
-  {{ include "linkwarden.auth.envs.issuer" $providerArg }}: {{ $issuer }}
+  {{ include "linkwarden.auth.envs.issuer" $providerArg }}: {{ $v.issuer }}
   {{- end }}
   {{- end }}
   {{- if (eq $provider "atlassian") }}
